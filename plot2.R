@@ -14,8 +14,8 @@ data <- data[data$Date %in% c("1/2/2007","2/2/2007"),]
 
 #create png file default is 480x480 so no need to specify
 #set backround = NA (transparent) as in the git examples
-par(bg=NA)
-png("plot2.png")
+
+png("plot2.png",bg=NA)
 #create plot no lines
 plot( data$DateTime, data$Global_active_power, type="n",
       ylab="Global Active Power (kilowatts)", xlab="")

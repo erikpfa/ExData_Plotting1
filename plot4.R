@@ -13,10 +13,8 @@ data$DateTime<- data$DateTime<- strptime(paste(data$Date, data$Time),
 data <- data[data$Date %in% c("1/2/2007","2/2/2007"),]
 
 #set backround = NA (transparent) as in the git examples
-par(bg=NA)
-
 #create png file default is 480x480 so no need to specify
-png("plot4.png")
+png("plot4.png",bg=NA)
 #setup 2x2 plot
 par(mfrow=c(2,2))
 #top left
